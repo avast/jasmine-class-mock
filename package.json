@@ -1,0 +1,14 @@
+{
+  "name": "jasmine-class-mock",
+  "version": "1.0.0",
+  "description": "Create a class mock with jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Pavel Studeny <pavel.studeny.avast@outlook.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "jasmine": "^2.4.0"
+  }
+}
