@@ -37,3 +37,43 @@ var d = new MyDate();
 expect(d.toLocaleDateString()).toBe("hahaha");  // calls stub
 expect(d.toLocaleTimeString()).toBeUndefined(); // template methods are replaced by noop
 ```
+
+## API
+
+### `create(name, members, staticMembers, realClass)`
+
+__name__: `String`
+
+(optional) label representing the constructor calls in log messages.
+
+__members__: `object`
+
+(optional) member functions and attributes of the returned class instance. At least an empty object must be present if staticMembers exist.
+
+__staticMembers__: `object`
+
+(optional) static functions and attribute of the returned class itself.
+
+__realClass__: `function`
+
+(optional) template to create the returned class from. Functions are replaced by empty functions returning no value, unless overwitten by `members` or `staticMembers`.
+
+#### Return value
+
+A Jasmine spy that acts as a class constructor. Extra properties:
+
+__first__: `object`
+
+The first instance of the class created by a new operator.
+
+__mostRecent__: `object`
+
+The last instance of the class created by a new operator.
+
+__instance(i)__: `object`
+
+`i`th instance of the class created by a new operator.
+
+__instance.count()__: `int`
+
+Total number of instances created.
