@@ -1,6 +1,6 @@
 {
   "name": "jasmine-class-mock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a class mock with jasmine",
   "main": "index.js",
   "scripts": {
